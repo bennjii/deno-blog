@@ -35,7 +35,7 @@ export function Index({ state, posts }: IndexProps) {
     <>
       {state.header || (
         <header
-          class="w-full h-90 lt-sm:h-80 bg-cover bg-center bg-no-repeat"
+          class="w-full h-70 lt-sm:h-80 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: state.cover ? `url(${state.cover})` : undefined,
           }}
@@ -100,7 +100,7 @@ export function Index({ state, posts }: IndexProps) {
       )}
 
       <div class="max-w-screen-sm px-6 mx-auto">
-        <div class="pt-16 lt-sm:pt-12 border-t-1 border-gray-300/80">
+        <div class="pt-12 lt-sm:pt-10">
           {postIndex.map((post) => (
             <PostCard
               post={post}
@@ -167,7 +167,7 @@ export function PostPage({ post, state }: PostPageProps) {
         	{state.showHeaderOnPostPage && state.header}
 			<header class="px-6 lg:px-14 h-12 lg:h-20 text-gray-500 flex justify-between items-center">
 				<a class="flex items-center flex-shrink-0" href="/">
-					<span class="text-2xl text-gray-900 font-bold">bennjii</span>
+					<span class="text-2xl text-gray-900 dark:text-gray-200 font-bold">bennjii</span>
 				</a>
 				
 				<div class="flex items-center gap-6">
@@ -178,12 +178,12 @@ export function PostPage({ post, state }: PostPageProps) {
 			</header>
 
 			<div class="max-w-screen-md px-6 pt-8 mx-auto">
-			<div class="flex flex-col items-center justify-center pb-12">
-				<img src={post.ogImage} width={500} alt="" />
+			<div class="flex flex-col items-center justify-center pb-12 gap-2">
+				<img src={post.ogImage} width={500} class="rounded-lg" alt="" />
 				{
 					post.coverCredit && (
 						<a href={post.coverCredit} class="flex w-full items-end justify-end">
-							<div class="flex items-center justify-center border border-gray-200 rounded-lg text-gray-700 gap-1 px-1 pl-2">
+							<div class="flex items-center bg-white justify-center border border-gray-200 rounded-lg text-gray-700 gap-1 px-1 pl-2">
 								{post.coverTitle}
 								<IconExternalLink ></IconExternalLink>
 							</div>
@@ -199,7 +199,7 @@ export function PostPage({ post, state }: PostPageProps) {
 			/>
 			)}
 			<article class="flex flex-col gap-5">
-				<h1 class="text-5xl text-gray-900 font-bold">{post.title}</h1>
+				<h1 class="text-5xl text-gray-900 dark:text-gray-200 font-bold">{post.title}</h1>
 				<Tags tags={post.tags} />
 
 				<p class="mt-1 text-gray-500">
