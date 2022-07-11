@@ -180,6 +180,16 @@ export function PostPage({ post, state }: PostPageProps) {
 			<div class="max-w-screen-md px-6 pt-8 mx-auto">
 			<div class="flex flex-col items-center justify-center pb-12">
 				<img src={post.ogImage} width={500} alt="" />
+				{
+					post.coverCredit && (
+						<a href={post.coverCredit} class="flex w-full items-end justify-end">
+							<div class="flex items-center justify-center border border-gray-200 rounded-lg text-gray-700 gap-1 px-1 pl-2">
+								{post.coverTitle}
+								<IconExternalLink ></IconExternalLink>
+							</div>
+						</a>
+					)
+				}
 			</div>
 
 			{post.coverHtml && (
@@ -217,7 +227,6 @@ export function PostPage({ post, state }: PostPageProps) {
 				/>
 				</article>
 
-				{state.section}
 				{state.footer || <Footer author={state.author} />}
 			</div>
     	</Fragment>

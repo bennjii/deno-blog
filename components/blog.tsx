@@ -248,6 +248,8 @@ import {
       markdown: content,
       coverHtml: data.get("cover_html"),
       ogImage: data.get("og:image"),
+      coverCredit: data.get("og:credit"),
+      coverTitle: data.get("og:title"),
       tags: data.get("tags"),
     };
     POSTS.set(pathname, post);

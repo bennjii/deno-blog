@@ -2,8 +2,11 @@
 title: rust - an honest review
 publish_date: 2022-07-11
 description: Rust is amazing, and heres why.
-og:image: ./rust_review/cover.png
 tags: [rust, development, full-stack] 
+
+og:image: ./rust_review/cover2.png
+og:credit: https://twitter.com/whoisaldeka/status/674465785557860353
+og:title: Safe vs Unsafe Rust
 ---
 
 [Rust](https://rust-lang.org). I'm sure you've heard of it by this point, but incase you haven't heres a quick rundown.
