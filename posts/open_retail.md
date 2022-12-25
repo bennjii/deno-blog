@@ -1,3 +1,14 @@
+---
+title: Open Source Retail
+publish_date: 2022-12-25
+description: The inspiration behind open source POS
+tags: [rust, development, full-stack, pos, open-source] 
+
+og:image: ./open_retail/open-stock.svg
+og:credit: https://github.com/bennjii/
+og:title: OpenStock Icon
+---
+
 ### Retail
 
 Open source is a wonderful concept, giving free access to others to explore your code, so they can grow or expand upon what you have made, to create plugins, mods, forks and all else which follows. Throughout my endeavours, I have made almost all of my code available on GitHub for others to see - it not only helps me to see where I have improved, but can help others who can learn from my implemented techniques; good, or bad, to improve their own code. 
